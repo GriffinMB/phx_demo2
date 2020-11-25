@@ -25,7 +25,8 @@
           },
           "partialFingerprints": {
             "primaryLocationLineHash": "C15BCE8CAF49A8448E904E375BA0C396"
-          }
+          },
+          "ruleId": "SBLW009"
         },
         {
           "level": "error",
@@ -49,7 +50,8 @@
           },
           "partialFingerprints": {
             "primaryLocationLineHash": "70682D8B69026A9A067A0A275B96949D"
-          }
+          },
+          "ruleId": "SBLW003"
         }
       ],
       "tool": {
