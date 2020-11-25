@@ -7,14 +7,16 @@
           "level": "error",
           "locations": [
             {
-              "artifactLocation": {
-                "uri": "config/prod.exs"
-              },
-              "region": {
-                "endColumn": 0,
-                "endLine": 0,
-                "startColumn": 0,
-                "startLine": 0
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "config/prod.exs"
+                },
+                "region": {
+                  "endColumn": 0,
+                  "endLine": 0,
+                  "startColumn": 0,
+                  "startLine": 0
+                }
               }
             }
           ],
@@ -29,14 +31,16 @@
           "level": "error",
           "locations": [
             {
-              "artifactLocation": {
-                "uri": "lib/phx_demo_web/router.ex"
-              },
-              "region": {
-                "endColumn": 5,
-                "endLine": 9,
-                "startColumn": 5,
-                "startLine": 9
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "lib/phx_demo_web/router.ex"
+                },
+                "region": {
+                  "endColumn": 5,
+                  "endLine": 9,
+                  "startColumn": 5,
+                  "startLine": 9
+                }
               }
             }
           ],
