@@ -1,0 +1,6 @@
+name: 'Sobelow Test'
+runs:
+  using: "composite"
+  steps: 
+    - run: mix sobelow --format sarif > results.sarif
+      shell: bash
