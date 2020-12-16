@@ -10,4 +10,4 @@ jobs:
     env:
       MIX_ENV: test
     steps:
-    - uses: GriffinMB/phx_demo
+    - uses: GriffinMB/phx_demo@v1
