@@ -2,10 +2,7 @@ name: "Sobelow Analysis"
 
 # Run workflow each time code is pushed to your repository and on a schedule.
 # The scheduled workflow runs every at 00:00 on Sunday UTC time.
-on:
-  push:
-  schedule:
-  - cron: '0 0 * * 0'
+on: [push]
 
 jobs:
   build:
@@ -13,19 +10,4 @@ jobs:
     env:
       MIX_ENV: test
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-elixir@v1
-      with: 
-        otp-version: 23.0.3
-        elixir-version: 1.10.x
-    - name: Install Dependencies
-      run: |
-        mix local.hex --force
-        mix local.rebar --force
-        mix deps.get --only test
-    - run: mix compile
-    - name: Run Sobelow
-      run: mix sobelow --format sarif > results.sarif
-    - uses: github/codeql-action/upload-sarif@v1
-      with:
-        sarif_file: results.sarif
+    - uses: GriffinMB/phx_demo
