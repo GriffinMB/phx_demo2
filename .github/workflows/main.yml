@@ -1,0 +1,10 @@
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: Test job
+    steps:
+    - name: Run action
+      id: run-action
+      uses: sobelow/action@cfd3564a3d589e03babf5289c1e845ecbfe0dbcb
