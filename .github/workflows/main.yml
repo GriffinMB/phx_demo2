@@ -5,8 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Test job
     steps:
-    - name: Run action
-      id: run-action
-      uses: sobelow/action@cfd3564a3d589e03babf5289c1e845ecbfe0dbcb
-      with:
-        flags: '-r /home/runner/work/phx_demo/phx_demo'
+      - uses: actions/checkout@v2
+      - name: Run action
+        id: run-action
+        uses: sobelow/action@cfd3564a3d589e03babf5289c1e845ecbfe0dbcb
+        with:
+          flags: '-r /home/runner/work/phx_demo/phx_demo'
