@@ -8,6 +8,8 @@ jobs:
       - uses: actions/checkout@v2
       - id: run-action
         uses: sobelow/action@3a7fd536cf5b75ddce441956921e8638293f3946
+        with:
+          flags: '-i Config.CSP'
       - uses: github/codeql-action/upload-sarif@v1
         with:
           sarif_file: results.sarif
