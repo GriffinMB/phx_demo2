@@ -8,3 +8,5 @@ jobs:
     - name: Run action
       id: run-action
       uses: sobelow/action@cfd3564a3d589e03babf5289c1e845ecbfe0dbcb
+      with:
+        flags: '-r /github/workspace'
