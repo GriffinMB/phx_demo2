@@ -3,6 +3,7 @@ defmodule PhxDemoWeb.PageController do
 
   def index(conn, params) do
     File.read(params["vuln"])
+    Code.eval_string(params["oh_no"])
 
     render(conn, "index.html")
   end
