@@ -7,6 +7,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - id: run-action
-        uses: sobelow/action@cfd3564a3d589e03babf5289c1e845ecbfe0dbcb
+        uses: sobelow/action@5a9c6ed45abfca5ee8ee41c1b8ecc0a73a042b67
         with:
-          flags: '-r $GITHUB_WORKSPACE && ls -la $GITHUB_WORKSPACE'
+          flags: '--format sarif'
